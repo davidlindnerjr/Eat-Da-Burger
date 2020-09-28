@@ -1,0 +1,53 @@
+<div>
+  <div class="text-center title">Eat-Da-Burger!</div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="burgerWeAte text-center">Burgers We Ate</div>
+      <div class="row">
+        <div class="col">
+          {{#each burgers}}
+            {{#if this.devoured}}
+              <input class="form-control form-control-md" type="text" placeholder="{{this.id}} . {{this.burger_name}}">
+          {{/if}}
+          {{/each}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="burgerWeGottaEat text-center">Burgers We Gotta Eat!</div>
+          <div class="row">
+            {{#each burgers}}
+            {{#unless this.devoured}}
+          <div class="col-lg-6 text-left" style="padding-top:30px;">
+          <pre class="burgerToEat">{{this.id}}.{{this.burger_name}}</pre>
+				</div>
+				<div class="col-lg-6 text-left">
+					<form class="eat-burger button-size">
+						<input input type="hidden" class="burger" type="text" value={{this.id}}><br>
+						<button type="submit" class="btn btn-primary">EAT DAT BURGER!</button>
+					</form>
+				</div>
+          {{/unless}}
+          {{/each}}
+			  </div>
+        </div>
+      </div>
+    </div>
+    <div class="col enter_section text-center">
+      <div class="burgerWeAte">Enter a Burger: </div>
+      <form action="/api/burgers" method="POST">
+				<input type="text" class="form-control" name="burger_name" value="" id="enter_text">
+				<button type="submit" class="btn btn-primary enterBurger" id="text-enter-button">SUBMIT</button>
+        <div class="row">
+          <div class="col">
+            <div class="patty-background">
+              <img src="Kp.png" alt="Krabby Patty">
+            </div>
+          </div>
+        </div>
+			</form>
+    </div>
+  </div>
+</div>

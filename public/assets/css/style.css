@@ -1,0 +1,45 @@
+*{
+  margin:0;
+  padding:0;
+  border-style: border-box;
+}
+
+body{
+  font-family: poppins;
+  background-image: linear-gradient(#03cffc, #e8e8e8);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.title{
+  text-shadow: black 4px 4px;
+  font-size: 60px;
+  padding:50px;
+  color:white;
+  font-weight: bold;
+}
+
+.enterBurger{
+  margin-top:30px;
+}
+
+.burgerToEat{
+  color:#4a4a4a;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.burgerWeGottaEat{
+  color:#4a4a4a;
+  font-size: 20px;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.burgerWeAte{
+  color:#4a4a4a;
+  font-size: 20px;
+  padding: 15px;
+  font-weight: bold;
+}
