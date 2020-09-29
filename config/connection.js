@@ -1,17 +1,26 @@
 const mysql = require("mysql");
 
-const connection = mysql.createConnection({
-  host: "us-cdbr-east-02.cleardb.net",
-  port: 3306,
-  user: "b5fc51ef35f10a",
-  password: "c9da2d0c",
-  database: "heroku_070cd252csbeafc"
-});
-
-
-connection.connect(function(err) {
-  if(err)throw err;
-  console.log("connected as id " + connection.threadId);
-});
-
-module.exports = connection;
+if(process.env.JAWSDB_URL){
+  const connnection = mysql.createConnection(process.env.JAWSDB_URL);
+  connection.connect((err)=>{
+    if(err)throw err;
+    console.log("connected as id " + connection.threadId);
+  });
+  
+  module.exports = connection;
+}
+else{
+  const connection = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "jellybeans",
+    database: "burgers_db"
+  });
+  connection.connect((err)=>{
+    if(err)throw err;
+    console.log("connected as id " + connection.threadId);
+  });
+  
+  module.exports = connection;
+}
