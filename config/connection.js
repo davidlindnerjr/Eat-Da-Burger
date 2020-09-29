@@ -1,7 +1,7 @@
 const mysql = require("mysql");
 
 if(process.env.JAWSDB_URL){
-  const connnection = mysql.createConnection(process.env.JAWSDB_URL);
+  const connection = mysql.createConnection(process.env.JAWSDB_URL);
   connection.connect((err)=>{
     if(err)throw err;
     console.log("connected as id " + connection.threadId);
