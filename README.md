@@ -19,6 +19,10 @@ This project was a tough one for me. If I didn't have the weekly activities as a
 
 ## Screenshots
 
+![Eat-Da-Burger! - Google Chrome 9_27_2020 5_51_58 PM](https://user-images.githubusercontent.com/65383133/94507740-43a4f000-01c5-11eb-9fef-768b76d7f1b8.png)
+![Eat-Da-Burger! - Google Chrome 9_27_2020 5_52_29 PM](https://user-images.githubusercontent.com/65383133/94507745-456eb380-01c5-11eb-9c70-43aceaeebfe1.png)
+![Eat-Da-Burger! - Google Chrome 9_27_2020 5_52_42 PM](https://user-images.githubusercontent.com/65383133/94507748-469fe080-01c5-11eb-9092-412ce6a0d96c.png)
+
 ## License
 
 MIT License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
